@@ -1,0 +1,99 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Basilisk.Presentation.Web
+build_property.RootNamespace = Basilisk.Presentation.Web
+build_property.ProjectDir = C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.Presentation.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.Presentation.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Authentication/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Authentication/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Authentication/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Authentication/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/DeleteFail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlRmFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5zZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Home/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Product/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbnNlcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/Supplier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1874/Bootcamp/Framework/FrameWork Day 3/2. Templating/src/Basilisk.Presentation.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

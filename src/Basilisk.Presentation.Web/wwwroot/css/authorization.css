@@ -1,0 +1,14 @@
+[data-role="Finance"] .supplier,
+[data-role="Salesman"] .supplier{
+ 
+}
+
+[data-role="Finance"] .category-index .create-button,
+[data-role="Finance"] .category-index .update-button,
+[data-role="Finance"] .category-index .delete-button
+{
+    cursor: not-allowed;
+    background: #636e72;
+    color: black;
+    opacity: 0.4;
+}

@@ -1,0 +1,30 @@
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.deps.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\bin\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\bin\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.CoreCompileInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.CopyComplete
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\refint\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\Basilisk.Busines\obj\Debug\net6.0\ref\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.deps.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\bin\Debug\net6.0\Basilisk.Busines.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\bin\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\bin\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.CoreCompileInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.CopyComplete
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\refint\Basilisk.Busines.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\Basilisk.Busines\obj\Debug\net6.0\ref\Basilisk.Busines.dll

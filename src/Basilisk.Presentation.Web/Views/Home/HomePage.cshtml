@@ -1,0 +1,40 @@
+﻿@using System.Security.Claims
+@{
+    var user = User as ClaimsPrincipal;
+    var username = user!.FindFirst("username")?.Value;
+    var role = user!.FindFirst(ClaimTypes.Role)?.Value;
+}
+
+@section breadcrumbs {
+    <span>@role?.ToUpper() DASHBOARD</span>
+}
+<main>
+    <div class="grid-container home-container">
+        <h1>Welcome To Basilisk App</h1>
+
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <div>
+                <a class="blue-button" asp-action="Login" asp-controller="Authentication" style="color:white">Login</a>
+                <a class="blue-button" asp-action="Register" asp-controller="Authentication" style="color:white">Register</a>
+            </div>
+        }
+        else
+        {
+
+            <h3>SELAMAT DATANG @username</h3>
+            <p>Silahkan pilih menu yang akan anda tuju</p>
+            <div>
+                @if (role == "Administrator")
+                {
+                    <a class="blue-button" asp-action="Index" asp-controller="Category" style="color:white">Category</a>
+                }
+                @if (role == "Administrator" || role == "Finance")
+                {
+                <a class="blue-button" asp-action="Index" asp-controller="Supplier" style="color:white">Supplier</a>
+                }
+                <a class="blue-button" asp-action="Index" asp-controller="Product">Product</a>
+            </div>
+        }
+    </div>
+</main>

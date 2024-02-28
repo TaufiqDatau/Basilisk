@@ -1,0 +1,86 @@
+﻿@using System.Security.Claims
+@{
+    var user = User as ClaimsPrincipal;
+
+    var username = user?.FindFirst("username")?.Value;
+    var role = user?.FindFirst(ClaimTypes.Role)?.Value;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basilisk</title>
+    <link rel="icon"  type="image/svg" href="~/favicon.png.ico"/>
+    <link rel="stylesheet" href="../wwwroot/css/"/>
+    <link rel="stylesheet" href="~/css/font-awesome.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/authorization.css" asp-append-version="true"/>
+    <script src="../../js/jquery-3.6.0.js"></script>
+    <script src="../../js/site.js" defer></script>
+    <script src="~/js/script.js" defer asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="main-body">
+    <header>
+        <div class="bread-crumbs">
+            @RenderSection("breadcrumbs",true)
+        </div>
+        <div class="user-wrapper">
+            @if(User.Identity.IsAuthenticated){
+            <div class="user">
+                <a class="full-name" asp-action="ChangePassword"  asp-controller="Authentication">@username</a>
+                <span class="role">@role</span>
+            </div>
+
+            <div class="sign-out">
+                <form asp-action="Logout" asp-controller="Authentication" method="post">
+                    <button type="submit" id="logout-button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </form>
+            </div>
+            }
+        </div>
+    </header>
+    <nav>
+        <div class="company-logo">
+            <a asp-action="HomePage" asp-controller="Home">
+            <img src="../../image/logo.png"   alt="Basilisk">
+            </a>
+            <h1>
+                Trade of <span class="bold">basilisk</span>
+            </h1>
+        </div>
+        @if(User.Identity.IsAuthenticated){
+        @if(role=="Administrator"){
+        <a class="menu category" asp-action="Index" asp-controller="category">
+            <i class="fas fa-th"></i>
+            <span>Category</span>
+        </a>
+        }
+        @if((role=="Finance")||(role=="Administrator") ){
+        <a class="menu supplier" href="/supplier">
+            <i class="fab fa-amazon"></i>
+            <span>Supplier</span>
+        </a>
+        }
+        <a class="menu product" asp-action="Index" asp-controller="product">
+            <i class="fas fa-box-open"></i>
+            <span>Product</span>
+        </a>
+        }
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        Copyrights &copy; 2023
+        <span class="author">Boby Widjaja</span>
+        All rights reserved
+    </footer>
+    
+</body>
+</html>

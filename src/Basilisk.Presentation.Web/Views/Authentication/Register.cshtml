@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = "../Shared/_AuthLayout.cshtml";
+}
+@model UserRegistrationViewModel
+<h1>Sign Up</h1>
+        <form method="post" >
+    
+            <div class="field-validation-error"></div>
+    
+            <input asp-for="Username"placeholder="username">
+            <span asp-validation-for="Username"></span>
+
+
+            <input asp-for="Password" type="password" placeholder="password">
+            <span asp-validation-for="Password"></span>
+            <input asp-for="RetypePassword" type="password" placeholder="confirm password">
+            <span asp-validation-for="RetypePassword"></span>
+            <select asp-for="Role" asp-items="@Model.Roles">
+
+            </select>
+            <button type="submit">sign up</button>
+        </form>
+        <div class="link-container">
+            <a asp-action="Login">Click here to login</a>
+        </div>

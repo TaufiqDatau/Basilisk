@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Basilisk.Presentation.Web.props" />
+</Project>

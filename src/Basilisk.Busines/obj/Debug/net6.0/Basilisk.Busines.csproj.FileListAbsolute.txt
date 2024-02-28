@@ -1,0 +1,5 @@
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\Basilisk.Busines\obj\Debug\net6.0\Basilisk.Busines.csproj.CoreCompileInputs.cache

@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ProductViewModel
+@section breadcrumbs{
+    <span><a asp-action="Index">Product</a> / Insert</span>
+}
+<h1>Add New Product</h1>
+<form class="upsert-form" method="post" asp-action="Edit">
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label asp-for="Name">Name</label>
+                    <span asp-validation-for="Name"></span>
+                </td>
+                <td>
+                    <input asp-for="Name" />
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label">
+                    <label asp-for="Description">Description</label>
+                </td>
+                <td>
+                    <textarea asp-for="Description"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="SupplierId">Supplier</label>
+                </td>
+                <td>
+                    <select asp-for="SupplierId">
+                        @foreach (var Supplier in Model.Suppliers)
+                        {
+                            <option value="@Supplier.Id">@Supplier.CompanyName</option>
+                        }
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="CategoryId">Category</label>
+                </td>
+                <td>
+                    <select asp-for="CategoryId">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Price">Price</label>
+                </td>
+                <td>
+                    <input asp-for="Price" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="OnOrder">OnOrder</label>
+                </td>
+                <td>
+                    <input asp-for="OnOrder" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Discontinue">Discontinue</label>
+                </td>
+                <td>
+                    <input asp-for="Discontinue" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="blue-button">Submit Product</button>
+</form>

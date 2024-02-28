@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "../Shared/_AuthLayout.cshtml";
+}
+
+@model UserLoginViewModel
+
+<h1>Sign In</h1>
+<form method="post" id="form-login" >
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div>
+            <span style="color:red">@ViewBag.ErrorMessage</span>
+        </div>
+    }
+    <input asp-for="Username" placeholder="Insert Username" autocomplete="off">
+    <input asp-for="Password" type="password" placeholder="Insert Password" >
+    
+    <div class="remember-me-container">
+        <input asp-for="RememberMe" id="remember-me">
+        <label for="remember-me">Remember Me</label>
+    </div>
+    <button>sign in</button>
+</form>
+<div class="link-container">
+    <a asp-action="Register">Click here to register</a>
+</div>
+
+<script src=~/js/Login.js asp-append-version="true" defer>
+  
+</script>
+

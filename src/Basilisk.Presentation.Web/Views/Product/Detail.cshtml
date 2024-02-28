@@ -1,0 +1,249 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ProductDetailViewModel
+
+@section breadcrumbs{
+    <span><a asp-action="Index">Product</a> / Detail</span>
+}
+
+<h1>Detail Product</h1>
+
+<div class="upsert-form category-index">
+<table>
+        <tbody>
+            <tr>
+                <td>Name </td>
+                <td>
+                    : @Model.Product.Name
+                </td>
+            </tr>
+            <tr>
+                <td>Price </td>
+                <td>
+                   : @Model.Product.Price.ToString("C")
+                </td>
+            </tr>
+            <tr>
+                <td>Category </td>
+                <td>
+                   : @Model.Product.CategoryName
+                </td>
+            </tr>            
+            <tr>
+                <td>Supplier </td>
+                <td>
+                   : @Model.Product.SupplierName
+                </td>
+            </tr>            
+            <tr>
+                <td>Stock </td>
+                <td>
+                    : @Model.Product.Stock
+                </td>
+            </tr>
+            <tr>
+                <td>On Order </td>
+                <td>
+                   : @Model.Product.OnOrder
+                </td>
+            </tr>
+            <tr>
+                <td>Discontinue </td>
+                <td>
+                   : @Model.Product.Discontinue
+                </td>
+            </tr>
+            <tr>
+                <td>Description </td>
+                <td>
+                    : @Model.Product.Description
+                </td>
+            </tr>            
+        </tbody>
+</table>
+
+</div>
+
+
+
+
+<div class="grid-container category-index" style="margin-block: 10px">
+
+    <button class="blue-button" style="margin:10px" id="yearly-report-button" onclick="showYearlyReport()">Yearly Report</button>
+    <button class="blue-button" style="margin:10px" id="monthly-report-button" onclick="showMonthlyReport()">Monthly Report</button>
+    <table id="yearly-report" style="display: none">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Sold</th>
+                <th>Net Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (YearlyReportRowViewModel yearlyReportRow in Model.YearlyReportTable)
+            {
+                <tr>
+                    <td>@yearlyReportRow.Year</td>
+                    <td>@yearlyReportRow.Sold</td>
+                    <td>@yearlyReportRow.NetTotal.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+
+    <table id="monthly-report" style="display: none">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Sold</th>
+                <th>Net Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MonthlyReportRowViewModel monthlyReportRow in Model.MonthlyReportTable)
+            {
+                <tr>
+                    <td>@monthlyReportRow.Year</td>
+                    <td>@monthlyReportRow.Month</td>
+                    <td>@monthlyReportRow.Quantity</td>
+                    <td>@monthlyReportRow.NetTotal.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div id="monthly-report" style="display:none">
+        <canvas id="netTotalChart" width="200" height="100"></canvas>
+        <canvas id="soldItemChart" width="200" height="100"></canvas>
+    </div>
+    <div id="yearly-report" style="display:none">
+        <canvas id="yearlyNetTotalChart" width="200" height="100"></canvas>
+        <canvas id="yearlySoldItemChart" width="200" height="100"></canvas>
+    </div>
+
+    <script>
+        // Extract data from the Monthly HTML table
+        var table = document.getElementById("monthly-report");
+        var rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+        var yearMonths = [];
+        var netTotalData = [];
+        var soldItemData = [];
+
+       
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].getElementsByTagName("td");
+            var yearMonth = cells[0].innerText + '-' + cells[1].innerText; 
+            yearMonths.push(yearMonth);
+            soldItemData.push(parseInt(cells[2].innerText));
+            netTotalData.push(parseFloat(cells[3].innerText.replace(/[^0-9.-]+/g, ""))); 
+        }
+
+    
+        var netTotalChart = new Chart(document.getElementById('netTotalChart').getContext('2d'), {
+            type: 'line', 
+            data: {
+                labels: yearMonths,
+                datasets: [{
+                    label: 'Net Total',
+                    data: netTotalData,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+   
+        var soldItemChart = new Chart(document.getElementById('soldItemChart').getContext('2d'), {
+            type: 'line', 
+            data: {
+                labels: yearMonths,
+                datasets: [{
+                    label: 'Sold Item',
+                    data: soldItemData,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var yearlyTable = document.getElementById("yearly-report");
+        var yearlyRows = yearlyTable.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+        var yearlyLabels = [];
+        var yearlyNetTotalData = [];
+        var yearlySoldItemData = [];
+
+        for (var i = 0; i < yearlyRows.length; i++) {
+            var yearlyCells = yearlyRows[i].getElementsByTagName("td");
+            yearlyLabels.push(yearlyCells[0].innerText); // Year
+            yearlySoldItemData.push(parseInt(yearlyCells[1].innerText)); // Sold Item
+            yearlyNetTotalData.push(parseFloat(yearlyCells[2].innerText.replace(/[^0-9.-]+/g, ""))); // Net Total
+        }
+
+        var yearlyNetTotalChart = new Chart(document.getElementById('yearlyNetTotalChart').getContext('2d'), {
+            type: 'line', 
+            data: {
+                labels: yearlyLabels,
+                datasets: [{
+                    label: 'Net Total',
+                    data: yearlyNetTotalData,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    
+        var yearlySoldItemChart = new Chart(document.getElementById('yearlySoldItemChart').getContext('2d'), {
+            type: 'line', 
+            data: {
+                labels: yearlyLabels,
+                datasets: [{
+                    label: 'Sold Item',
+                    data: yearlySoldItemData,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</div>

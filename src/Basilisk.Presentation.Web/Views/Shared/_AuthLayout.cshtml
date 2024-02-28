@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basilisk</title>
+    <link rel="icon" type="/image/ico" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/site.css">
+    <link rel="stylesheet" href="../../css/authorization.css">
+    <script src="../../js/jquery-3.6.0.js"></script>
+    <script src="../../js/site.js" defer></script>
+</head>
+<body class="authentication-body">
+    <div class="authentication-wrapper">
+        <header class="company-logo">
+            <a asp-action="HomePage" asp-controller="Home">
+                <img src="../../image/logo.png" alt="Basilisk">
+            </a>
+            <h1>
+                Trade of <span class="bold">basilisk</span>
+            </h1>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

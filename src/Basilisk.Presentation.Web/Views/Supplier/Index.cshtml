@@ -1,0 +1,168 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+@section Breadcrumbs {
+    <span>Suppliers</span>
+}
+<h1>Suppliers List</h1>
+<div class="grid-container category-index">
+    <form class="filter">
+        <label for="supplier-name-search">Name</label>
+        <input type="text" placeholder="Input name" id="supplier-name-search" />
+        <button class="blue-button supplier-search-button">Search Supplier</button>
+    </form>
+    <a class="blue-button create-button" id="insert-new-supplier-button" onclick="">Insert New Supplier</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Job Title</th>
+            </tr>
+        </thead>
+        <tbody id="supplier-table-body">
+        </tbody>
+        <tfoot id="supplier-table-foot">
+            <tr>
+                <td colspan="4">
+                    <div class="pagination">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div class="modal-layer">
+    <div class="popup-dialog contact-dialog">
+        <header>
+            <h1>Supplier Form</h1>
+            <a href="javascript:;" class="close-button">
+                <i class="fas fa-window-close"></i>
+            </a>
+        </header>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Address</td>
+                    <td class="address"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td class="city"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td class="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td class="phone"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="popup-dialog form-dialog">
+        <header>
+            <h1>Supplier Form</h1>
+            <a href="javascript:;" class="close-button">
+                <i class="fas fa-window-close"></i>
+            </a>
+        </header>
+        <form>
+            <input type="hidden" class="id">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Company Name*</td>
+                        <td>
+                            <input type="text" class="companyName">
+                            <div class="validation-message" data-for="CompanyName"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contact Person*</td>
+                        <td>
+                            <input type="text" class="contactPerson">
+                            <div class="validation-message" data-for="ContactPerson"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Job Title*</td>
+                        <td>
+                            <input type="text" class="jobTitle">
+                            <div class="validation-message" data-for="JobTitle"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textarea-label">Address</td>
+                        <td>
+                            <textarea class="address"></textarea>
+                            <div class="validation-message" data-for="Address"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>
+                            <input type="text" class="city">
+                            <div class="validation-message" data-for="City"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="text" class="email">
+                            <div class="validation-message" data-for="Email"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            <input type="text" class="phone">
+                            <div class="validation-message" data-for="Phone"></div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+            <button type="submit" class="blue-button">Save Supplier</button>
+        </form>
+    </div>
+
+    <div class="popup-dialog delete-dialog">
+        <header>
+            <h1>Delete Supplier</h1>
+            <a href="javascript:;" class="close-button">
+                <i class="fas fa-window-close"></i>
+            </a>
+        </header>
+        <form>
+            <input type="hidden" class="id">
+            <p>Apakah anda yakin ingin menghapus supplier ini?</p>
+            <button class="blue-button" type="submit">Remove</button>
+        </form>
+    </div>
+
+    <div class="popup-dialog denied-dialog">
+        <header>
+            <h1>Access Denied</h1>
+            <a href="javascript:;" class="close-button">
+                <i class="fas fa-window-close"></i>
+            </a>
+        </header>
+        <form>
+            <input type="hidden" class="id">
+            <p>Anda tidak dapat mengakses perintah ini</p>
+            
+        </form>
+    </div>
+</div>
+
+
+<script src="~/js/supplier/supplier-popup.js" asp-append-version="true" defer></script>

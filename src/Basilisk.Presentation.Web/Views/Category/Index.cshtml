@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+@model CategoryIndexViewModel
+
+@section breadcrumbs{
+    <span>Category</span>
+}
+<h1>Category Page</h1>
+
+<div class="grid-container category-index">
+    <form class="filter" method="get" asp-action="Index">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name">
+        <button class="blue-button">Search Category</button>
+    </form>
+    <a href="./insert" class="blue-button create-button">Insert New Category</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Update" asp-route-id="@category.Id" class="blue-button update-button">Edit</a>
+                        <a class="blue-button delete-button" href="./deletefailed?id=@category.Id">Delete</a>
+                        <a class="blue-button delete-button" href="./products?id=@category.Id">Detail</a>
+                    </td>
+                    <td>@category.Name</td>
+                    <td>@category.Description</td>
+                </tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <div class="pagination">
+                        @if (Model.PaginationInfo.CurrentPage > Model.PaginationInfo.TotalPage)
+                        {
+                            <div>page @Model.PaginationInfo.TotalPage of @Model.PaginationInfo.TotalPage</div>
+                        }
+                        else if (Model.PaginationInfo.CurrentPage < 1)
+                        {
+                            <div>page 1 of @Model.PaginationInfo.TotalPage</div>
+                        }
+                        else
+                        {
+                            <div>page @Model.PaginationInfo.CurrentPage of @Model.PaginationInfo.TotalPage</div>
+                        }
+
+                        <div>
+                            @for (var num = 1; num <= Model.PaginationInfo.TotalPage; num++)
+                            {
+                                //url.action("Index",new {name=@Model.name, page=@num})
+                                <a asp-action="Index" asp-route-page="@num" asp-route-name="@Model.Name" class="@(num == Model.PaginationInfo.CurrentPage ? "current-page" : "")">
+                                    <span>@num</span>
+                                </a>
+                            }
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

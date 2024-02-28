@@ -1,0 +1,151 @@
+@media only screen and (max-width: 1600px) {
+    .grid-tiles .tiles-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 350px);
+    }
+}
+@media only screen and (max-width: 1210px) {
+    html{
+        font-size:11px;
+    }
+    .main-body{
+        grid-template-columns: 0 1fr;
+        min-width: 950px;
+    }
+    .main-body > main {
+        padding: 0;
+        border-top:solid #0e1122 2px;
+        border-bottom:solid #0e1122 2px;
+    }
+    .grid-container {
+        border-radius: 0;
+    }
+    body.change-menu{
+        grid-template-columns: 180px 1fr;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .main-body > header{
+        overflow:hidden;
+    }
+    .main-body > footer{
+        overflow:hidden;
+    }
+    .main-body > nav .company-logo{
+        padding: 18px 0 0 18px;
+        display:block;
+        margin-bottom:15px;
+    }
+    .company-logo h1{
+        display:none;
+    }
+    .main-body > nav > a{
+        padding: 18px 0 18px 18px
+    }
+    .main-body > nav > a > span{
+        display:none;
+    }
+    body.change-menu{
+        grid-template-columns: 70px 1fr;
+    }
+    .main-body{
+        min-width: 320px;
+    }
+    .main-body > header{
+        padding: 0 15px;
+    }
+    .user-wrapper{
+        display: none;
+    }
+    .bread-crumbs > span{
+        font-size:14px;
+    }
+    .filter{
+        border-bottom:solid #0e1122 2px;
+    }
+    .filter button{
+        margin-top:10px;
+        width:100%;
+    }
+    .filter [type=text],
+    .filter select,
+    .filter [type=date],
+    .filter [type=tel],
+    .filter [type=email],
+    .filter [type=number],
+    .filter [type=datetime-local]{
+        display: block;
+        margin-bottom: 10px;
+        width:100%;
+    }
+    .create-button{
+        margin-top:15px;
+        margin-left:10px;
+    }
+    .grid-container tbody > tr:first-child {
+        border-top: #3a466c solid 1px;
+    }
+    .grid-container tbody tr td:first-child{
+        display:flex;
+        gap:8px;
+    }
+    .grid-container tbody tr td:first-child > a {
+        flex-grow:1;
+    }
+    .grid-container table,
+    .grid-container tbody,
+    .grid-container tr,
+    .grid-container td,
+    .grid-container tfoot{
+        display:block;
+    }
+    .grid-container thead{
+        display:none;
+    }
+    .upsert-form table,
+    .upsert-form tbody,
+    .upsert-form tr,
+    .upsert-form td{
+        display:block;
+    }
+    .upsert-form tbody > tr > td:first-child{
+        padding-bottom:4px;
+    }
+    .upsert-form tbody > tr > td:last-child{
+        padding-bottom:25px;
+    }
+    .upsert-form [type=text],
+    .upsert-form [type=password],
+    .upsert-form select,
+    .upsert-form [type=date],
+    .upsert-form [type=tel],
+    .upsert-form [type=email],
+    .upsert-form [type=number],
+    .upsert-form [type=datetime-local],
+    .upsert-form textarea{
+        width:100%;
+    }
+    .grid-tiles .tiles-container{
+        display:block;
+    }
+    .grid-tiles .tiles-container .tile{
+        margin:15px;
+    }
+    .grid-tiles .create-button{
+        margin-left: 15px;
+    }
+    .tile .name,
+    .tile .price{
+        font-size:12px;
+    }
+    .tile .supplier,
+    .tile .category{
+        font-size:11px;
+    }
+    .grid-tiles .filter{
+        border-radius:0;
+    }
+    .pagination .numbers{
+        display:none;
+    }
+}

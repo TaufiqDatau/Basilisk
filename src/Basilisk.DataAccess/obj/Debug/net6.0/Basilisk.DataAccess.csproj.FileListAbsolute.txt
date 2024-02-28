@@ -1,0 +1,42 @@
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.deps.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\refint\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\ref\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.runtimeconfig.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 1\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.genruntimeconfig.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.deps.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.runtimeconfig.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\refint\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.genruntimeconfig.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 2\Presentation Layer\1. Showing Data from Database\Basilisk\src\Basilisk.DataAccess\obj\Debug\net6.0\ref\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.deps.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.runtimeconfig.json
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\bin\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.AssemblyReference.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfoInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.AssemblyInfo.cs
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\refint\Basilisk.DataAccess.dll
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.pdb
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\Basilisk.DataAccess.genruntimeconfig.cache
+C:\Users\1874\Bootcamp\Framework\FrameWork Day 3\2. Templating\src\Basilisk.DataAccess\obj\Debug\net6.0\ref\Basilisk.DataAccess.dll

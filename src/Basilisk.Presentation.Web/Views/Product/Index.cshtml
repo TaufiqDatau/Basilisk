@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+@model ProductIndexViewModel
+
+@section breadcrumbs{
+    <span>Product</span>
+}
+<h1>Product Page</h1>
+
+<div class="grid-container category-index">
+    <form class="filter" method="get" asp-action="Index">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name">
+        <label asp-for="SupplierId">Supplier</label>
+        <select asp-for="SupplierId" asp-items="@Model.Suppliers.Select(s => new SelectListItem(s.CompanyName, s.Id.ToString()))">
+            <option value="0">Select All Supplier</option>
+        </select>
+
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="@Model.Categories!.Select(c=> new SelectListItem(c.Name,c.Id.ToString()))">
+            <option value="0">Select All Category</option>
+            </select>
+        <button class="blue-button">Search Product</button>
+    </form>
+    <a href="./insert" class="blue-button create-button">Insert New Product</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Supplier</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>On Order</th>
+                <th>Discontinued</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@product.Id" class="blue-button update-button">Edit</a>
+                        <a asp-action="Detail" asp-route-id="@product.Id" class="blue-button detail-button">Detail</a>
+                        @*<a asp-action="Delete" asp-route-id="@product.Id" class="blue-button update-button">Delete</a>*@
+                    </td>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.SupplierName</td>
+                    <td>@product.CategoryName</td>
+                    <td>@product.Price.ToString("C")</td>
+                    <td>@product.Stock</td>
+                    <td>@product.OnOrder</td>
+                    <td>@product.Discontinue</td>
+                    
+                    
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">
+                    <div class="pagination">
+                        @if (Model.PaginationInfo.CurrentPage > Model.PaginationInfo.TotalPage)
+                        {
+                            <div>page @Model.PaginationInfo.TotalPage of @Model.PaginationInfo.TotalPage</div>
+                        }
+                        else if (Model.PaginationInfo.CurrentPage < 1)
+                        {
+                            <div>page 1 of @Model.PaginationInfo.TotalPage</div>
+                        }
+                        else
+                        {
+                            <div>page @Model.PaginationInfo.CurrentPage of @Model.PaginationInfo.TotalPage</div>
+                        }
+
+                        <div>
+                            @for (var num = 1; num <= Model.PaginationInfo.TotalPage; num++)
+                            {
+                                //url.action("Index",new {name=@Model.name, page=@num})
+                                <a asp-action="Index" asp-route-pagenumber="@num" asp-route-name="@Model.Name" asp-route-supplierid="@Model.SupplierId" asp-route-categoryid="@Model.CategoryId" class="@(num == Model.PaginationInfo.CurrentPage ? "current-page" : "")">
+                                    <span>@num</span>
+                                </a>
+                            }
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Basilisk.Presentation.API.props" />
+</Project>
